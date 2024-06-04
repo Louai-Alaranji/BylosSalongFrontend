@@ -39,7 +39,17 @@ export default function UserBooking(){
     }
 
     const handleEmployeeSelect = async (employeeId) => {
+        if (!employeeId) {
+            setSelectedEmployee(null);
+            setSelectedEmployeeName("");
+            setFetchedServices([]);
+            setAvailablehours([]);
+            setFilteredAvailableHours([]);
+            userDataCtx.handleEmployeeId(null); // Assuming you want to reset the employee ID in context as well
+            return;
+        }
         try {
+            
           // Convert the selected employee ID to a number
           const parsedEmployeeId = parseInt(employeeId, 10); // or +employeeId;
             
@@ -61,6 +71,7 @@ export default function UserBooking(){
           );
           setSelectedEmployee(selectedEmployee);
         } catch (error) {
+          
           console.error("Error fetching available hours:", error);
         }
     };

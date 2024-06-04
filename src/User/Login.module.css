@@ -102,10 +102,6 @@ header h1 {
   background-color: #3e8e41;
 }
 
-.imgInput{
-  max-width: 200px;
-
-}
 
 .divider {
   width: 100%;
@@ -139,6 +135,12 @@ header h1 {
 
 .verifyButton {
   min-width: fit-content;
+}
+
+
+.imgInput{
+  width: 200px;
+
 }
 @media only screen and (max-width: 600px){
   .form{
