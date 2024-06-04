@@ -11,6 +11,7 @@
     background-color: #fff; /* White background for content */
     border-radius: 5px; /* Add subtle rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+    padding-bottom: 5%;
 }
   
 .form {
@@ -143,23 +144,22 @@ header h1 {
 
 }
 @media only screen and (max-width: 600px){
-  .form{
-    flex-direction: column;
-    max-width: 90%;
-    margin: 0 auto;
-    max-height: fit-content;
-    border: none; 
-  }
+.form{
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  max-height: fit-content;
+  border: none; 
+}
 
-  .span input {
-    /* Style input fields */
-    max-width: 50%;
-    
-  }
-  button{
-    max-width: 50%;
-    text-align: center;
-  }
+.span input {
+  /* Style input fields */
+  max-width: 50%;
+}
+button{
+  max-width: 50%;
+  text-align: center;
+}
  
 }
 
