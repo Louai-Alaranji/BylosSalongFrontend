@@ -1,0 +1,163 @@
+
+  
+.main {
+    /* Center the main content area */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh; /* Set minimum height for full viewport */
+    width: 100%; /* Stretch to full width */
+    background-color: #fff; /* White background for content */
+    border-radius: 5px; /* Add subtle rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+  
+.form {
+    /* Style the login form */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 5px; /* Match rounded corners of main area */
+}
+
+.registerLink{
+font-size: larger;
+}
+
+.span {
+  /* Style each form field group */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+  
+.span label {
+    /* Style labels for form fields */
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: larger;
+}
+  
+.span input {
+    /* Style input fields */
+    flex: 1; /* Allow input to grow and fill remaining space */
+    padding: 10px 20px; 
+    border: 1px solid #ccc; /* Match border style */
+    border-radius: 3px; /* Add slight rounded corners */
+    font-size: 16px; /* Match body font size */
+}
+  
+.button {
+  /* Style both login and book buttons */
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Indicate clickable behavior */
+  border-radius: 5px; /* Match rounded corners */
+}
+  
+.button:hover {
+  /* Add hover effect for buttons */
+  background-color: #3e8e41; /* Darken green color on hover */
+}
+
+.button:disabled {
+  /* Style disabled button (optional) */
+  background-color: #ccc; /* Light gray for disabled state */
+  cursor: default; /* Remove pointer indication */
+}
+  
+header h1 {
+  /* Style the login header */
+  text-align: center;
+  margin-bottom: 20px;
+}
+  
+
+.noLoginBtn{
+  text-align: center;
+}
+
+.para{
+  text-align: center;
+  padding: 0;
+  margin-bottom: 1px;
+}
+
+.center{
+  text-align: center;
+  background-color: #3e8e41;
+}
+
+.imgInput{
+  max-width: 200px;
+
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.verifyDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: #007bff; /* Blue for primary action */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+  cursor: pointer;
+}
+
+.verifyButton {
+  min-width: fit-content;
+}
+@media only screen and (max-width: 600px){
+  .form{
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    max-height: fit-content;
+    border: none; 
+  }
+
+  .span input {
+    /* Style input fields */
+    max-width: 50%;
+    
+  }
+  button{
+    max-width: 50%;
+    text-align: center;
+  }
+ 
+}
+

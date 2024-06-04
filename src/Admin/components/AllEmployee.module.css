@@ -1,0 +1,75 @@
+
+.allEmployeesh1 {
+    text-align: center;
+    margin-top: 20px; /* Optional: add some margin for spacing */
+}
+
+.allEmployeesDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Center the list */
+    width: 90%; /* Set width to 90% of the parent container */
+    max-width: 800px; /* Optional: set a maximum width for the list */
+}
+
+.employeeWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 300px;
+    background-color: rgb(175, 173, 173);
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.imgNameWrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.imgNameWrapper h3 {
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+.deleteButton {
+    background-color: red;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: darkred; /* Darken the color on hover */
+}
+
+.profileImg {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .employeeWrapper {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+    }
+
+    .deleteButton {
+        width: 100%; /* Make the button take full width on small screens */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+}

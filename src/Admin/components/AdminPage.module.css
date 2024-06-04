@@ -1,0 +1,227 @@
+
+.title{
+    text-align: center;
+}
+
+
+.adminMainDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/* Input and Button Container Styles */
+.span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+/* Input Styles */
+input[type="number"] {
+  width: 60px; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="time"] {
+  width: 100px; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.button {
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: #007bff; /* Blue for primary action */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+  cursor: pointer;
+}
+
+.logoutDiv{
+text-align: center;
+margin-top: auto;
+
+}
+
+/* List Styles */
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+
+}
+.mainDiv{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom:100px ;
+}
+
+.adminServicesDropddown {
+  min-width: 300px; /* Adjust width as needed */
+  padding: 8px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  outline: none; /* Remove outline */
+  text-align: center;
+}
+
+
+/* Button inside List Styles */
+
+.button:disabled {
+    background-color: #444444; /* Red color for disabled buttons */
+    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+}
+
+.button:disabled:hover {
+      background-color: #ff0000; /* Maintain red color on hover for disabled buttons */
+      cursor: not-allowed;
+}
+
+.employeesList button:hover {
+    background-color: #3e8e41;
+}
+
+.employeesList button:enabled:focus{
+  background-color: #3e8e41;
+}
+
+
+/******************************* Calender **************************/
+.calendar{
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.calendar button{
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: #007bff; /* Blue for primary action */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar button:hover{
+  background-color: #3e8e41;
+}
+
+.calendar button:enabled:focus{
+  background-color: #3e8e41;
+}
+.calendar button:disabled:hover{
+  background-color: #ff0000; /* Maintain red color on hover for disabled buttons */
+  cursor: not-allowed;
+}
+
+.calendar button:disabled{
+  background-color: #444444; /* Red color for disabled buttons */
+  cursor: not-allowed;
+}
+
+/***********************************       ************************/
+.employeeContainer:hover {
+  background-color: #e0e0e0; /* Darker background color on hover */
+}
+
+.profilePic {
+  width: 100px; /* Reduce the size of the profile picture */
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px; /* Increase margin */
+}
+
+
+.employeeSelect {
+  padding: 8px 12px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add rounded corners */
+  width: 50%; /* Set width to fill container */
+}
+
+/* Style for each option in the dropdown */
+.employeeSelect option {
+  padding: 8px 12px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Style for the dropdown when focused */
+.employeeSelect:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow when focused */
+}
+
+.buttonWrapper button:hover {
+  background-color: #32a041; /* Darker green background color on hover */
+}
+
+.hourInput{
+  font-size: medium;
+  max-width: 100px;
+  min-height: 25px;
+}
+
+.lunch-break {
+  background-color: yellow;
+}
+
+.logoutDiv {
+  display: inline;
+}
+.logoutBtn{
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #f03232;
+}
+
+.logoutBtn:hover{
+  
+  background-color: #ff0000;
+}
+.disabledButton{
+  background-color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+.calendar {
+  width: 80%;
+  min-width: 370px;
+}
+
+}

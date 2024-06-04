@@ -1,0 +1,35 @@
+
+
+.successh1{
+    font-size: 1.4rem;
+}
+
+.successh2{
+    font-size: 1.2rem;
+}
+
+.successbutton{
+    
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #007bff; /* Blue for primary action */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.successbutton:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .modal{
+       
+        width: 80%;
+    }
+}

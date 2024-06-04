@@ -1,0 +1,52 @@
+.servicesSection {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicesSection h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.serviceCategory {
+    display: inline-block;
+    width: 300px;
+    margin: 0 20px 20px 0; /* Add margin between categories */
+    vertical-align: top; /* Align categories to the top */
+}
+
+.serviceCategory h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color:  #DAA520; /* Light gray background */
+    padding: 10px 20px; /* Add some padding */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+.serviceCategory ul {
+    list-style: none;
+    padding: 0;
+}
+
+.serviceCategory ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9; /* Slightly darker background */
+    padding: 8px 20px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+@media only screen and (max-width: 600px) {
+    .serviceCategory {
+        width: 100%; /* Take full width on small screens */
+        margin: 0 0 20px 0; /* Add margin between categories */
+    }
+
+    .serviceCategory h3 {
+        font-size: 18px;
+    }
+
+    .serviceCategory ul li {
+        font-size: 16px;
+    }
+}

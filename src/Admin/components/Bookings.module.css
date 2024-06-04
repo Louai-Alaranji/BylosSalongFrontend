@@ -1,0 +1,110 @@
+.mainBigDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.calendar {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.calendar button {
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar button:hover {
+    background-color: #3e8e41;
+}
+
+.calendar button:enabled:focus {
+    background-color: #3e8e41;
+}
+
+.calendar button:disabled:hover {
+    background-color: #ff0000;
+    cursor: not-allowed;
+}
+
+.calendar button:disabled {
+    background-color: #444444;
+    cursor: not-allowed;
+}
+
+h2 {
+    text-align: center;
+}
+
+.mainDiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.bookingsList {
+    list-style-type: none;
+    background-color: rgb(51, 51, 51);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    max-width: 100%;
+    min-width: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 110px;
+}
+
+
+.bookingsList li {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bookingsInfoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    min-width: 200px;
+    max-width: fit-content;
+}
+
+.bookingsInfoDiv span {
+    margin: 3px;
+    color: rgb(37, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .calendar {
+        width: 80%;
+    }
+
+    .bookingsInfoDiv {
+        width: 70%;
+    }
+
+    .bookingsInfoDiv span {
+        margin: 3px 0;
+        font-size: small;
+    }
+}
